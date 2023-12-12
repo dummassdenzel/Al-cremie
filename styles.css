@@ -1,0 +1,196 @@
+@font-face {
+    font-family: 'RoxboroughCF';
+    src: url('resources/fonts/RoxboroughCF.ttf') format('truetype');
+}
+
+
+
+body {
+    background: url('resources/images/bg9.jpg') no-repeat center center fixed; 
+    background-size: cover;
+    background-position: center;
+    /*
+    background-color: darkolivegreen;
+    */
+}
+
+
+#navi{
+    
+    /*   
+    background-image: url('resources/images/bg2.png');
+    background-size: auto; 
+    background-position: center;  
+    */
+    background-color: #25282C; 
+    margin-bottom: 0px;  
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+    padding-left: 20px;
+}
+#logo{
+    height: 90px;       
+    
+}
+#alcremie{
+    font-size: 50px;
+}
+h1 {
+    color: #e0e0e2;
+    font-family: 'RoxboroughCF', sans-serif;
+    text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.5);
+}
+
+
+
+
+#pantry{
+    background-image: url('resources/images/maroon3.jpg');
+    background-size: auto;
+    background-position: center;  
+    border-radius: 0px 0px 0px 0px;     
+    padding-bottom: 10px; 
+    padding-top: 10px;   
+     
+}
+::-webkit-scrollbar {
+    width: 12px;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #491414;
+    border-radius: 6px;
+}
+
+#pantry h1{
+    color: #e0e0e2;
+}
+.clear{
+    background-color: #F8E8D0;
+    border-radius: 5px 5px 5px 5px; 
+    border: none;
+    margin: 2px;    
+    padding-left: 30px;
+    padding-right: 30px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+    font-family: 'RoxboroughCF', sans-serif;
+    transition: box-shadow 0.2s ease-in-out;
+}
+.clear:hover{
+    background-color: #faf0e4;
+    box-shadow: 6px 6px 7px rgba(0, 0, 0, 0.7);
+    transform: scale(1.02);
+}
+.clear:active{
+    background-color: rgb(126, 122, 118);
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+#igdbar{
+    background-image: url('resources/images/beige3.jpg');
+    background-size: cover;
+    background-position: center;    
+    border-radius: 15px 15px 15px 15px;   
+    padding: 30px;  
+    margin-top: -10px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+}
+#igdbar2{
+    background-image: url('resources/images/beige2.jpg');
+    background-size: auto;
+    background-position: center;  
+    border-radius: 15px 15px 15px 15px; 
+    padding-bottom: 20px;
+    
+}
+#igdbar h4{
+    color: maroon;
+    font-family: 'RoxboroughCF', sans-serif;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+}
+#igdsection{
+    padding: 10px;
+}
+
+.ingredient{
+    background-color: moccasin;
+    border-radius: 5px 5px 5px 5px; 
+    border: none;
+    margin: 2px;    
+    padding: 5px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+    font-family: 'RoxboroughCF', sans-serif;
+    transition: box-shadow 0.2s ease-in-out;
+}
+.ingredient:hover{
+    background-color: rgb(192, 152, 99);
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.4);
+    transform: scale(1.02);
+}
+
+
+
+
+#recipe{
+    background-image: url('resources/images/maroon3.jpg');
+    background-size: auto;
+    background-position: center; 
+    border-radius: 0px 0px 0px 0px;      
+    padding-bottom: 10px;   
+    padding-top: 10px;  
+}
+
+#recipe h1{
+    color: #e0e0e2;
+}
+#rcpbar{
+    background-image: url('resources/images/beige3.jpg');
+    background-size: cover;
+    background-position: center;  
+    margin-top: -10px;
+    border-radius: 15px 15px 15px 15px; 
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+}
+#rcpbarDisplay{
+    color: maroon;
+    padding: 30px;
+    text-align: center;
+}
+
+#Info{
+    color: black;
+    font-family: 'RoxboroughCF', sans-serif;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+
+.selected {
+    background-color: #641d1f !important;
+    color: #e0e0e2;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+
+
+
+.recipe-item {
+    background-image: url('resources/images/beige2.jpg');
+    background-size: auto;
+    background-position: center;  
+    border-radius: 15px 15px 15px 15px;
+    margin-bottom: 10px;   
+    padding: 20px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+/* Style for the recipe name (h3) */
+.recipe-item h3 {
+    color: maroon;
+    font-family: 'RoxboroughCF', sans-serif;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+    
+}
+
+/* Style for the variable ingredients info (h5) */
+.recipe-item h5 {
+    color: #5c5b5b;
+    font-size: 1.1em;
+}

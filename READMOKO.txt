@@ -1,0 +1,28 @@
+Hello! I am Denzel Manz S. Perez, the creator of this website.
+
+First of all, if you're reading this, I would like to thank you for
+your interest in my website for whatever purpose.
+
+Now let me introduce you to my Online Recipe Aggregator Platform, Al'cremie.
+
+
+Al'cremie is originally meant for a college project, which soon turned out to be
+one of my favorite personal works.
+
+Al'cremie lets you input your available ingredients in your pantry and uses that
+information to bring you recipes that are compatible to what ingredients
+you currently have.
+
+It is made particularly for people who are just starting out on cooking and are
+struggling to explore new recipes but it can also be used by people of
+all culinary expertise.
+
+
+With that said, the scope of Al'cremie doesn't include the actual instructions
+on how to make the said recipe, there's already plenty of that going around in
+the internet. Al'cremie is only responsible of making something out of your pantry.
+
+
+With all that said, happy cooking to you all!
+
+- Denzel Manz Perez
