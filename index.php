@@ -61,6 +61,7 @@
                         </div>
                     </div>
 
+                    
                     <div class="row" id="igdbar">
                         <div class="text-center shadow" id="igdbar2">
 
@@ -175,6 +176,8 @@
             var selectedIngredients = <?php echo $json_igd; ?>;
             var allRecipes = <?php echo $json_rcps; ?>;
 
+
+            //ADD AN INGREDIENT TO SELECTED INGREDIENTS
             buttons.forEach(button => {
                 button.addEventListener('click', function () {
                     this.classList.toggle('selected');
@@ -192,6 +195,8 @@
                 });
             });
 
+
+            //SAVE SELECTED INGREDIENTS TO DATABASE
             function saveSelectedIngredients(ingredient) {
                 const endpoint = 'includes/igdSave.php';
 
@@ -211,6 +216,7 @@
                     });
             }
 
+            //REMOVE AN INGREDIENT FROM THE SELECTED INGREDIENTS
             function removeSelectedIngredient(ingredient) {
                 const endpoint = 'includes/igdRemove.php';
 
@@ -229,7 +235,9 @@
                         console.error('Error removing selected ingredient:', error);
                     });
             }
+            
 
+            //REAL TIME UPDATE OF DISPLAY
             function updateIngredientDisplay() {
                 const displayDiv = document.getElementById('recipeDisplay');
                 displayDiv.innerHTML = '';
@@ -241,7 +249,7 @@
 
                     allRecipes.forEach(recipe => {
                         const essentialIngredients = recipe.EssentialIngredients;
-                        const variableIngredients = recipe.VariableIngredients || []; // Handle the case where VariableIngredients is undefined
+                        const variableIngredients = recipe.VariableIngredients || []; 
 
                         if (
                             essentialIngredients.every(ingredient => selectedIngredients.includes(ingredient)) &&
@@ -261,23 +269,23 @@
                         matchedRecipes.forEach(match => {
                             const { recipe, selectedVariableIngredients } = match;
 
-                            // Create a div for each recipe
+                            
                             const recipeDiv = document.createElement('div');
                             recipeDiv.classList.add('recipe-item');
 
-                            // Add recipe name to the div
+                            
                             const recipeName = document.createElement('h3');
                             recipeName.classList.add('Recipes');
                             recipeName.textContent = recipe.Name;
                             recipeDiv.appendChild(recipeName);
 
-                            // Add EssentialIngredients to the div
+                            
                             const essentialIngredientsInfo = document.createElement('h5');
                             essentialIngredientsInfo.id = 'Info';
                             essentialIngredientsInfo.textContent = 'Essential Ingredients: ' + recipe.EssentialIngredients.join(', ');
                             recipeDiv.appendChild(essentialIngredientsInfo);
 
-                            // Add selected variable ingredients if any
+                            
                             if (selectedVariableIngredients.length > 0) {
                                 const variableIngredientsInfo = document.createElement('h5');
                                 variableIngredientsInfo.id = 'Info';
@@ -285,7 +293,7 @@
                                 recipeDiv.appendChild(variableIngredientsInfo);
                             }
 
-                            // Append the recipe div to the main displayDiv
+                            
                             displayDiv.appendChild(recipeDiv);
                         });
                     } else {
